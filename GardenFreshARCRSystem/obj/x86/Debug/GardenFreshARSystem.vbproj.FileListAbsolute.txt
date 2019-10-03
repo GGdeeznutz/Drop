@@ -1,0 +1,24 @@
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\bin\Debug\GardenFreshARCRSystem.exe
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\bin\Debug\GardenFreshARCRSystem.pdb
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\bin\Debug\GardenFreshARCRSystem.xml
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARSystem.vbprojResolveAssemblyReference.cache
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.add_account.resources
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.add_classification.resources
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.add_customer.resources
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.add_product.resources
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.Billing.resources
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.dashboard.resources
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.Resources.resources
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.product_entry.resources
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARSystem.vbproj.GenerateResource.Cache
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.exe
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.xml
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.pdb
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.credit.resources
+E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.saleentry.resources
+D:\VS Projects\Drop\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.exe
+D:\VS Projects\Drop\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.xml
+D:\VS Projects\Drop\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.pdb
+D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.exe
+D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.xml
+D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.pdb
