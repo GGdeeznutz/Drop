@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class quantity_form
+Public Class quantity_form2
     Dim query As String
     Dim cmd As MySqlCommand
     Dim da As MySqlDataAdapter

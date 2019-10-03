@@ -202,11 +202,11 @@ Public Class saleentry
 
     Private Sub cmbremove_Click(sender As Object, e As EventArgs) Handles cmbremove.Click
         If is_cart_clicked Then
-            quantity_form.selected_product_entry_code_from_cart = selected_product_entry_code_from_cart
-            quantity_form.sales_entry_code = txtsalesntrycode.Text
-            quantity_form.invoice_code = txtsalesinv.Text
-            quantity_form.selected_quantity_from_cart = selected_quantity_from_cart
-            quantity_form.ShowDialog()
+            quantity_form2.selected_product_entry_code_from_cart = selected_product_entry_code_from_cart
+            quantity_form2.sales_entry_code = txtsalesntrycode.Text
+            quantity_form2.invoice_code = txtsalesinv.Text
+            quantity_form2.selected_quantity_from_cart = selected_quantity_from_cart
+            quantity_form2.ShowDialog()
         End If
     End Sub
 End Class

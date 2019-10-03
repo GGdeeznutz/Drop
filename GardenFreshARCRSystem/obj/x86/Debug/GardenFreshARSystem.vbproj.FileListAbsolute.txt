@@ -19,14 +19,6 @@ E:\Project\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\WindowsAppl
 D:\VS Projects\Drop\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.exe
 D:\VS Projects\Drop\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.xml
 D:\VS Projects\Drop\GardenFreshARCRSystem\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.pdb
-D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.exe
-D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.xml
-D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.pdb
-D:\VS Projects\Drop\GardenFreshARCRSystem\bin\Debug\GardenFreshARCRSystem.exe
-D:\VS Projects\Drop\GardenFreshARCRSystem\bin\Debug\GardenFreshARCRSystem.pdb
-D:\VS Projects\Drop\GardenFreshARCRSystem\bin\Debug\GardenFreshARCRSystem.xml
-D:\VS Projects\Drop\GardenFreshARCRSystem\bin\Debug\MySql.Data.dll
-D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARSystem.vbprojResolveAssemblyReference.cache
 D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.add_account.resources
 D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.add_classification.resources
 D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.add_customer.resources
@@ -38,4 +30,11 @@ D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.Reso
 D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.product_entry.resources
 D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.saleentry.resources
 D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARSystem.vbproj.GenerateResource.Cache
-D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.quantity_form.resources
+D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.xml
+D:\VS Projects\Drop\GardenFreshARCRSystem\bin\Debug\GardenFreshARCRSystem.exe
+D:\VS Projects\Drop\GardenFreshARCRSystem\bin\Debug\GardenFreshARCRSystem.pdb
+D:\VS Projects\Drop\GardenFreshARCRSystem\bin\Debug\GardenFreshARCRSystem.xml
+D:\VS Projects\Drop\GardenFreshARCRSystem\bin\Debug\MySql.Data.dll
+D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.quantity_form2.resources
+D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.exe
+D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.pdb
