@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82A84FA2-30F2-4EC5-9DD4-24B5BEFF5143}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>GardenFreshARCRSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GardenFreshARCRSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GardenFreshARCRSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Games\MySQL\MySQL Connector Net 6.5.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_account.Designer.vb">
+      <DependentUpon>add_account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_classification.Designer.vb">
+      <DependentUpon>add_classification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_classification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_customer.Designer.vb">
+      <DependentUpon>add_customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_product.Designer.vb">
+      <DependentUpon>add_product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_product.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="billing.Designer.vb">
+      <DependentUpon>billing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="billing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="connection.vb" />
+    <Compile Include="credit.Designer.vb">
+      <DependentUpon>credit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="credit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="product_entry.Designer.vb">
+      <DependentUpon>product_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="product_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sale_entry.Designer.vb">
+      <DependentUpon>sale_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sale_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="add_account.resx">
+      <DependentUpon>add_account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_classification.resx">
+      <DependentUpon>add_classification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_customer.resx">
+      <DependentUpon>add_customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_product.resx">
+      <DependentUpon>add_product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billing.resx">
+      <DependentUpon>billing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="credit.resx">
+      <DependentUpon>credit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product_entry.resx">
+      <DependentUpon>product_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sale_entry.resx">
+      <DependentUpon>sale_entry.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
