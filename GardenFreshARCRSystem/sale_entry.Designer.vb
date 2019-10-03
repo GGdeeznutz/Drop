@@ -26,7 +26,6 @@ Partial Class saleentry
         Me.txtprodsearch = New System.Windows.Forms.TextBox()
         Me.cmbadd = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.txtcustomerid = New System.Windows.Forms.TextBox()
         Me.txtremoveprod = New System.Windows.Forms.TextBox()
         Me.txtremovequan = New System.Windows.Forms.TextBox()
         Me.cmbremove = New System.Windows.Forms.Button()
@@ -35,6 +34,7 @@ Partial Class saleentry
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cmbconfirm = New System.Windows.Forms.Button()
+        Me.txtcustomerid = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtprodentrycode = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -63,27 +63,31 @@ Partial Class saleentry
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(34, 84)
+        Me.DataGridView1.Location = New System.Drawing.Point(26, 68)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(437, 205)
+        Me.DataGridView1.Size = New System.Drawing.Size(729, 167)
         Me.DataGridView1.TabIndex = 53
         '
         'txtprodsearch
         '
-        Me.txtprodsearch.Location = New System.Drawing.Point(34, 41)
+        Me.txtprodsearch.Location = New System.Drawing.Point(26, 33)
+        Me.txtprodsearch.Margin = New System.Windows.Forms.Padding(2)
         Me.txtprodsearch.Name = "txtprodsearch"
-        Me.txtprodsearch.Size = New System.Drawing.Size(233, 22)
+        Me.txtprodsearch.Size = New System.Drawing.Size(176, 20)
         Me.txtprodsearch.TabIndex = 55
         '
         'cmbadd
         '
-        Me.cmbadd.Location = New System.Drawing.Point(830, 253)
+        Me.cmbadd.Location = New System.Drawing.Point(1105, 222)
+        Me.cmbadd.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbadd.Name = "cmbadd"
-        Me.cmbadd.Size = New System.Drawing.Size(75, 40)
+        Me.cmbadd.Size = New System.Drawing.Size(56, 32)
         Me.cmbadd.TabIndex = 2
         Me.cmbadd.Text = "Add"
         Me.cmbadd.UseVisualStyleBackColor = True
@@ -101,240 +105,272 @@ Partial Class saleentry
         Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Controls.Add(Me.cmbconfirm)
         Me.Panel3.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Panel3.Location = New System.Drawing.Point(34, 327)
+        Me.Panel3.Location = New System.Drawing.Point(26, 266)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(879, 329)
+        Me.Panel3.Size = New System.Drawing.Size(1162, 268)
         Me.Panel3.TabIndex = 1
-        '
-        'txtcustomerid
-        '
-        Me.txtcustomerid.Location = New System.Drawing.Point(830, 58)
-        Me.txtcustomerid.Name = "txtcustomerid"
-        Me.txtcustomerid.Size = New System.Drawing.Size(91, 22)
-        Me.txtcustomerid.TabIndex = 85
         '
         'txtremoveprod
         '
-        Me.txtremoveprod.Location = New System.Drawing.Point(131, 277)
+        Me.txtremoveprod.Location = New System.Drawing.Point(98, 225)
+        Me.txtremoveprod.Margin = New System.Windows.Forms.Padding(2)
         Me.txtremoveprod.Name = "txtremoveprod"
-        Me.txtremoveprod.Size = New System.Drawing.Size(91, 22)
+        Me.txtremoveprod.Size = New System.Drawing.Size(69, 20)
         Me.txtremoveprod.TabIndex = 84
         '
         'txtremovequan
         '
-        Me.txtremovequan.Location = New System.Drawing.Point(228, 277)
+        Me.txtremovequan.Location = New System.Drawing.Point(171, 225)
+        Me.txtremovequan.Margin = New System.Windows.Forms.Padding(2)
         Me.txtremovequan.Name = "txtremovequan"
-        Me.txtremovequan.Size = New System.Drawing.Size(91, 22)
+        Me.txtremovequan.Size = New System.Drawing.Size(69, 20)
         Me.txtremovequan.TabIndex = 83
         '
         'cmbremove
         '
-        Me.cmbremove.Location = New System.Drawing.Point(794, 21)
+        Me.cmbremove.Location = New System.Drawing.Point(1087, 14)
+        Me.cmbremove.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbremove.Name = "cmbremove"
-        Me.cmbremove.Size = New System.Drawing.Size(75, 42)
+        Me.cmbremove.Size = New System.Drawing.Size(56, 34)
         Me.cmbremove.TabIndex = 71
         Me.cmbremove.Text = "Remove "
         Me.cmbremove.UseVisualStyleBackColor = True
         '
         'DataGridView2
         '
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(17, 22)
+        Me.DataGridView2.Location = New System.Drawing.Point(13, 18)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.ReadOnly = True
         Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(771, 222)
+        Me.DataGridView2.Size = New System.Drawing.Size(1057, 180)
         Me.DataGridView2.TabIndex = 0
         '
         'txtsalestype
         '
-        Me.txtsalestype.Location = New System.Drawing.Point(325, 277)
+        Me.txtsalestype.Location = New System.Drawing.Point(244, 225)
+        Me.txtsalestype.Margin = New System.Windows.Forms.Padding(2)
         Me.txtsalestype.Name = "txtsalestype"
-        Me.txtsalestype.Size = New System.Drawing.Size(91, 22)
+        Me.txtsalestype.Size = New System.Drawing.Size(69, 20)
         Me.txtsalestype.TabIndex = 82
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(692, 249)
+        Me.TextBox1.Location = New System.Drawing.Point(1010, 199)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(91, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(69, 20)
         Me.TextBox1.TabIndex = 4
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(628, 247)
+        Me.Label4.Location = New System.Drawing.Point(962, 198)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 17)
+        Me.Label4.Size = New System.Drawing.Size(45, 13)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "TOTAL:"
         '
         'cmbconfirm
         '
-        Me.cmbconfirm.Location = New System.Drawing.Point(747, 277)
+        Me.cmbconfirm.Location = New System.Drawing.Point(1051, 222)
+        Me.cmbconfirm.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbconfirm.Name = "cmbconfirm"
-        Me.cmbconfirm.Size = New System.Drawing.Size(75, 40)
+        Me.cmbconfirm.Size = New System.Drawing.Size(56, 32)
         Me.cmbconfirm.TabIndex = 69
         Me.cmbconfirm.Text = "Confirm"
         Me.cmbconfirm.UseVisualStyleBackColor = True
         '
+        'txtcustomerid
+        '
+        Me.txtcustomerid.Location = New System.Drawing.Point(1105, 63)
+        Me.txtcustomerid.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtcustomerid.Name = "txtcustomerid"
+        Me.txtcustomerid.Size = New System.Drawing.Size(69, 20)
+        Me.txtcustomerid.TabIndex = 85
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(31, 18)
+        Me.Label3.Location = New System.Drawing.Point(23, 15)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(110, 17)
+        Me.Label3.Size = New System.Drawing.Size(84, 13)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Product Search:"
         '
         'txtprodentrycode
         '
-        Me.txtprodentrycode.Location = New System.Drawing.Point(636, 163)
+        Me.txtprodentrycode.Location = New System.Drawing.Point(960, 148)
+        Me.txtprodentrycode.Margin = New System.Windows.Forms.Padding(2)
         Me.txtprodentrycode.Name = "txtprodentrycode"
-        Me.txtprodentrycode.Size = New System.Drawing.Size(183, 22)
+        Me.txtprodentrycode.Size = New System.Drawing.Size(138, 20)
         Me.txtprodentrycode.TabIndex = 63
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(513, 229)
+        Me.Label6.Location = New System.Drawing.Point(868, 202)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 17)
+        Me.Label6.Size = New System.Drawing.Size(63, 13)
         Me.Label6.TabIndex = 60
         Me.Label6.Text = "Description:"
         '
         'txtquan
         '
-        Me.txtquan.Location = New System.Drawing.Point(636, 262)
+        Me.txtquan.Location = New System.Drawing.Point(960, 229)
+        Me.txtquan.Margin = New System.Windows.Forms.Padding(2)
         Me.txtquan.Name = "txtquan"
-        Me.txtquan.Size = New System.Drawing.Size(63, 22)
+        Me.txtquan.Size = New System.Drawing.Size(48, 20)
         Me.txtquan.TabIndex = 57
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(513, 267)
+        Me.Label9.Location = New System.Drawing.Point(868, 233)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(65, 17)
+        Me.Label9.Size = New System.Drawing.Size(49, 13)
         Me.Label9.TabIndex = 56
         Me.Label9.Text = "Quantity:"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(513, 163)
+        Me.Label12.Location = New System.Drawing.Point(868, 148)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(116, 17)
+        Me.Label12.Size = New System.Drawing.Size(87, 13)
         Me.Label12.TabIndex = 67
         Me.Label12.Text = "Prod Entry Code:"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(31, 307)
+        Me.Label13.Location = New System.Drawing.Point(23, 249)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(80, 17)
+        Me.Label13.Size = New System.Drawing.Size(60, 13)
         Me.Label13.TabIndex = 68
         Me.Label13.Text = "Sales Entry"
         '
         'txtclassification
         '
-        Me.txtclassification.Location = New System.Drawing.Point(636, 226)
+        Me.txtclassification.Location = New System.Drawing.Point(960, 200)
+        Me.txtclassification.Margin = New System.Windows.Forms.Padding(2)
         Me.txtclassification.Name = "txtclassification"
-        Me.txtclassification.Size = New System.Drawing.Size(183, 22)
+        Me.txtclassification.Size = New System.Drawing.Size(138, 20)
         Me.txtclassification.TabIndex = 70
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(649, 1)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(970, 17)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(290, 22)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(218, 20)
         Me.DateTimePicker1.TabIndex = 65
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(513, 194)
+        Me.Label1.Location = New System.Drawing.Point(868, 174)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(102, 17)
+        Me.Label1.Size = New System.Drawing.Size(78, 13)
         Me.Label1.TabIndex = 72
         Me.Label1.Text = "Product Name:"
         '
         'txtprodname
         '
-        Me.txtprodname.Location = New System.Drawing.Point(636, 191)
+        Me.txtprodname.Location = New System.Drawing.Point(960, 171)
+        Me.txtprodname.Margin = New System.Windows.Forms.Padding(2)
         Me.txtprodname.Name = "txtprodname"
-        Me.txtprodname.Size = New System.Drawing.Size(183, 22)
+        Me.txtprodname.Size = New System.Drawing.Size(138, 20)
         Me.txtprodname.TabIndex = 71
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(513, 135)
+        Me.Label2.Location = New System.Drawing.Point(868, 126)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(78, 17)
+        Me.Label2.Size = New System.Drawing.Size(62, 13)
         Me.Label2.TabIndex = 74
         Me.Label2.Text = "Invoice No:"
         '
         'txtsalesinv
         '
-        Me.txtsalesinv.Location = New System.Drawing.Point(636, 132)
+        Me.txtsalesinv.Location = New System.Drawing.Point(960, 123)
+        Me.txtsalesinv.Margin = New System.Windows.Forms.Padding(2)
         Me.txtsalesinv.Name = "txtsalesinv"
-        Me.txtsalesinv.Size = New System.Drawing.Size(183, 22)
+        Me.txtsalesinv.Size = New System.Drawing.Size(138, 20)
         Me.txtsalesinv.TabIndex = 73
         '
         'txtsalesntrycode
         '
-        Me.txtsalesntrycode.Location = New System.Drawing.Point(636, 93)
+        Me.txtsalesntrycode.Location = New System.Drawing.Point(960, 92)
+        Me.txtsalesntrycode.Margin = New System.Windows.Forms.Padding(2)
         Me.txtsalesntrycode.Name = "txtsalesntrycode"
-        Me.txtsalesntrycode.Size = New System.Drawing.Size(183, 22)
+        Me.txtsalesntrycode.Size = New System.Drawing.Size(138, 20)
         Me.txtsalesntrycode.TabIndex = 75
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(513, 93)
+        Me.Label5.Location = New System.Drawing.Point(868, 92)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(117, 17)
+        Me.Label5.Size = New System.Drawing.Size(88, 13)
         Me.Label5.TabIndex = 76
         Me.Label5.Text = "Sales Entry Code"
         '
         'txtcredno
         '
-        Me.txtcredno.Location = New System.Drawing.Point(636, 29)
+        Me.txtcredno.Location = New System.Drawing.Point(960, 40)
+        Me.txtcredno.Margin = New System.Windows.Forms.Padding(2)
         Me.txtcredno.Name = "txtcredno"
-        Me.txtcredno.Size = New System.Drawing.Size(183, 22)
+        Me.txtcredno.Size = New System.Drawing.Size(138, 20)
         Me.txtcredno.TabIndex = 79
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(513, 32)
+        Me.Label7.Location = New System.Drawing.Point(868, 42)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(69, 17)
+        Me.Label7.Size = New System.Drawing.Size(52, 13)
         Me.Label7.TabIndex = 78
         Me.Label7.Text = "Credit no:"
         '
         'txtcustomername
         '
-        Me.txtcustomername.Location = New System.Drawing.Point(636, 61)
+        Me.txtcustomername.Location = New System.Drawing.Point(960, 66)
+        Me.txtcustomername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtcustomername.Name = "txtcustomername"
-        Me.txtcustomername.Size = New System.Drawing.Size(183, 22)
+        Me.txtcustomername.Size = New System.Drawing.Size(138, 20)
         Me.txtcustomername.TabIndex = 86
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(513, 61)
+        Me.Label8.Location = New System.Drawing.Point(868, 66)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(111, 17)
+        Me.Label8.Size = New System.Drawing.Size(83, 13)
         Me.Label8.TabIndex = 85
         Me.Label8.Text = "Customer name:"
         '
         'saleentry
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(951, 668)
+        Me.ClientSize = New System.Drawing.Size(1226, 543)
         Me.Controls.Add(Me.txtcustomerid)
         Me.Controls.Add(Me.txtcustomername)
         Me.Controls.Add(Me.Label8)
@@ -359,7 +395,9 @@ Partial Class saleentry
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Panel3)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "saleentry"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sales Entry"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)

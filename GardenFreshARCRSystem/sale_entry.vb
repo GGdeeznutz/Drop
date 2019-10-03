@@ -7,9 +7,12 @@ Public Class saleentry
     Dim ds As DataSet
     Dim exeread As MySqlDataReader
     Public sales_type As String
+    Dim selected_product_entry_code_from_cart As String
+    Dim selected_quantity_from_cart As Integer
+    Public is_cart_clicked = False
 
-    Private Sub loadfinishedproductrec()
-        Dim sql As MySqlCommand = New MySqlCommand("SELECT a.product_entry_code as 'Product Code', b.product_name, b.price, c.description, a.quantity, a.date from tbl_product_entry a, tbl_product_reg b, tbl_classification c where a.classification_code = c.classification_code and b.product_code = a.product_code", connection.con)
+    Public Sub loadfinishedproductrec()
+        Dim sql As MySqlCommand = New MySqlCommand("SELECT a.product_entry_code, b.product_name as 'Product Name', b.price as 'Price', c.description as 'Description', a.quantity as 'Quantity' from tbl_product_entry a, tbl_product_reg b, tbl_classification c where a.classification_code = c.classification_code and b.product_code = a.product_code", connection.con)
         da = New MySqlDataAdapter()
         ds = New DataSet
 
@@ -19,13 +22,14 @@ Public Class saleentry
         DataGridView1.DataSource = ds
         DataGridView1.DataMember = "rec"
         connection.con.Close()
-        DataGridView1.Columns("Product Code").Visible = False
+        DataGridView1.Columns("product_entry_code").Visible = False
 
     End Sub
 
-    Private Sub loadcart()
-        Dim sql As MySqlCommand = New MySqlCommand("select sales_entry_code, inv_no," & _
-            " product_entry_code, quantity from tbl_temp", connection.con)
+    Public Sub loadcart()
+        Dim sql As MySqlCommand = New MySqlCommand("Select a.product_entry_code, b.product_name as 'Product', a.quantity as 'Quantity', d.description " &
+            "as 'Classification' From tbl_temp a, tbl_product_reg b, tbl_product_entry c, tbl_classification d Where a.product_entry_code " &
+            "= c.product_entry_code And c.product_code = b.product_code And c.classification_code = d.classification_code", connection.con)
         da = New MySqlDataAdapter()
         ds = New DataSet
 
@@ -35,6 +39,8 @@ Public Class saleentry
         DataGridView2.DataSource = ds
         DataGridView2.DataMember = "rec"
         connection.con.Close()
+
+        DataGridView2.Columns(0).Visible = False
     End Sub
 
     Private Sub sale_entry_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -85,14 +91,29 @@ Public Class saleentry
 
 
             txtprodentrycode.Text = row.Cells(0).Value.ToString
-            txtprodname.Text = row.Cells("product_name").Value.ToString
-            txtclassification.Text = row.Cells("description").Value.ToString
+            txtprodname.Text = row.Cells(1).Value.ToString
+            txtclassification.Text = row.Cells(3).Value.ToString
         End If
     End Sub
     Private Sub cmbadd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbadd.Click
-        If is_product_added_existed() Then
-            Dim previous_quantity, added_quantity As Integer
+        Dim current_quantity_product_entry As Integer = 0
+        Dim previous_quantity, added_quantity, subtracted_quantity As Integer
 
+        connection.con.Open()
+        query = "select quantity from tbl_product_entry where product_entry_code ='" + txtprodentrycode.Text + "'"
+        cmd = New MySqlCommand(query, connection.con)
+
+        exeread = cmd.ExecuteReader()
+
+        If exeread.Read Then
+            If exeread.GetInt16("quantity") > 0 Then
+                current_quantity_product_entry = exeread.GetString("quantity")
+            End If
+        End If
+        connection.con.Close()
+
+
+        If is_product_added_existed() Then
             connection.con.Open()
             query = "select quantity from tbl_temp where sales_entry_code ='" + txtsalesntrycode.Text + "' AND inv_no = '" & txtsalesinv.Text & "' AND product_entry_code = '" & txtprodentrycode.Text & "'"
             cmd = New MySqlCommand(query, connection.con)
@@ -111,42 +132,42 @@ Public Class saleentry
             added_quantity = previous_quantity + Integer.Parse(txtquan.Text)
 
             connection.con.Open()
-
-            query = "UPDATE tbl_temp SET quantity = '" & added_quantity.ToString & "' WHERE sales_entry_code = '" & txtsalesntrycode.Text & _
+            query = "UPDATE tbl_temp SET quantity = '" & added_quantity.ToString & "' WHERE sales_entry_code = '" & txtsalesntrycode.Text &
                 "' AND inv_no = '" & txtsalesinv.Text & "' AND product_entry_code = '" & txtprodentrycode.Text & "'"
-
-
             cmd = New MySqlCommand(query, connection.con)
-
             cmd.ExecuteNonQuery()
-            'MsgBox("Successful!", MsgBoxStyle.Information)
+            connection.con.Close()
 
+            subtracted_quantity = current_quantity_product_entry - Integer.Parse(txtquan.Text)
 
+            connection.con.Open()
+            query = "UPDATE tbl_product_entry SET quantity = '" & subtracted_quantity.ToString & "' WHERE product_entry_code = '" & txtprodentrycode.Text &
+                "'"
+            cmd = New MySqlCommand(query, connection.con)
+            cmd.ExecuteNonQuery()
             connection.con.Close()
         Else
+
+
             connection.con.Open()
-
-
-            query = "INSERT INTO tbl_temp(sales_entry_code, inv_no, product_entry_code, quantity)VALUES('" & _
+            query = "INSERT INTO tbl_temp(sales_entry_code, inv_no, product_entry_code, quantity)VALUES('" &
                 txtsalesntrycode.Text & "', '" & txtsalesinv.Text & "', '" & txtprodentrycode.Text & "','" & txtquan.Text & "')"
-
-
             cmd = New MySqlCommand(query, connection.con)
-
             cmd.ExecuteNonQuery()
-            'MsgBox("Successful!", MsgBoxStyle.Information)
-
-
             connection.con.Close()
 
+            subtracted_quantity = current_quantity_product_entry - Integer.Parse(txtquan.Text)
+
+            connection.con.Open()
+            query = "UPDATE tbl_product_entry SET quantity = '" & subtracted_quantity.ToString & "' WHERE product_entry_code = '" & txtprodentrycode.Text &
+                "'"
+            cmd = New MySqlCommand(query, connection.con)
+            cmd.ExecuteNonQuery()
+            connection.con.Close()
         End If
 
         loadcart()
-
-    End Sub
-
-    Private Sub cmbremove_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbremove.Click
-
+        loadfinishedproductrec()
     End Sub
 
     Private Sub cmbconfirm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbconfirm.Click
@@ -166,5 +187,26 @@ Public Class saleentry
         reset_add_to_cart()
         loadcart()
         MsgBox("Added!")
+    End Sub
+
+    Private Sub DataGridView2_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellClick
+        If e.RowIndex >= 0 Then
+            Dim row As DataGridViewRow
+            row = DataGridView2.Rows(e.RowIndex)
+
+            selected_product_entry_code_from_cart = row.Cells(0).Value.ToString
+            selected_quantity_from_cart = Integer.Parse(row.Cells(2).Value.ToString)
+            is_cart_clicked = True
+        End If
+    End Sub
+
+    Private Sub cmbremove_Click(sender As Object, e As EventArgs) Handles cmbremove.Click
+        If is_cart_clicked Then
+            quantity_form.selected_product_entry_code_from_cart = selected_product_entry_code_from_cart
+            quantity_form.sales_entry_code = txtsalesntrycode.Text
+            quantity_form.invoice_code = txtsalesinv.Text
+            quantity_form.selected_quantity_from_cart = selected_quantity_from_cart
+            quantity_form.ShowDialog()
+        End If
     End Sub
 End Class
