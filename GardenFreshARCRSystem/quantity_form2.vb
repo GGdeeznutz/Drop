@@ -83,5 +83,6 @@ Public Class quantity_form2
 
         saleentry.loadfinishedproductrec()
         saleentry.loadcart()
+        saleentry.computeTotal()
     End Sub
 End Class

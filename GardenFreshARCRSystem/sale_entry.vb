@@ -27,8 +27,8 @@ Public Class saleentry
     End Sub
 
     Public Sub loadcart()
-        Dim sql As MySqlCommand = New MySqlCommand("Select a.product_entry_code, b.product_name as 'Product', a.quantity as 'Quantity', d.description " &
-            "as 'Classification' From tbl_temp a, tbl_product_reg b, tbl_product_entry c, tbl_classification d Where a.product_entry_code " &
+        Dim sql As MySqlCommand = New MySqlCommand("Select a.product_entry_code, Concat(b.product_name, ' - ', d.description) as 'Product', a.quantity as " &
+            "'Quantity', (a.Quantity * b.price) as 'Sub-total' From tbl_temp a, tbl_product_reg b, tbl_product_entry c, tbl_classification d Where a.product_entry_code " &
             "= c.product_entry_code And c.product_code = b.product_code And c.classification_code = d.classification_code", connection.con)
         da = New MySqlDataAdapter()
         ds = New DataSet
@@ -50,6 +50,21 @@ Public Class saleentry
         txtsalesinv.Text = DateTime.Now.ToString("ddMM-yyyy-HHmmss") & "-GGG"
         txtsalestype.Text = sales_type
         reset_add_to_cart()
+    End Sub
+
+    Sub computeTotal()
+        Dim computeCounter As Integer
+        Dim total As Double = 0
+
+        For computeCounter = 0 To DataGridView2.Rows.Count - 1 Step +1
+            Try
+                total += DataGridView2.Rows(computeCounter).Cells("Sub-total").Value
+            Catch ex As Exception
+                total += 0
+            End Try
+        Next
+
+        tb_total.Text = FormatNumber(CDbl(total), 2)
     End Sub
 
     Sub reset_add_to_cart()
@@ -168,6 +183,7 @@ Public Class saleentry
 
         loadcart()
         loadfinishedproductrec()
+        computeTotal()
     End Sub
 
     Private Sub cmbconfirm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbconfirm.Click

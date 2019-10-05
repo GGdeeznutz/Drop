@@ -31,7 +31,7 @@ Partial Class saleentry
         Me.cmbremove = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.txtsalestype = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tb_total = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cmbconfirm = New System.Windows.Forms.Button()
         Me.txtcustomerid = New System.Windows.Forms.TextBox()
@@ -71,7 +71,7 @@ Partial Class saleentry
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(729, 167)
+        Me.DataGridView1.Size = New System.Drawing.Size(352, 421)
         Me.DataGridView1.TabIndex = 53
         '
         'txtprodsearch
@@ -84,7 +84,7 @@ Partial Class saleentry
         '
         'cmbadd
         '
-        Me.cmbadd.Location = New System.Drawing.Point(1105, 222)
+        Me.cmbadd.Location = New System.Drawing.Point(657, 288)
         Me.cmbadd.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbadd.Name = "cmbadd"
         Me.cmbadd.Size = New System.Drawing.Size(56, 32)
@@ -101,19 +101,19 @@ Partial Class saleentry
         Me.Panel3.Controls.Add(Me.cmbremove)
         Me.Panel3.Controls.Add(Me.DataGridView2)
         Me.Panel3.Controls.Add(Me.txtsalestype)
-        Me.Panel3.Controls.Add(Me.TextBox1)
+        Me.Panel3.Controls.Add(Me.tb_total)
         Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Controls.Add(Me.cmbconfirm)
         Me.Panel3.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Panel3.Location = New System.Drawing.Point(26, 266)
+        Me.Panel3.Location = New System.Drawing.Point(765, 44)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1162, 268)
+        Me.Panel3.Size = New System.Drawing.Size(450, 488)
         Me.Panel3.TabIndex = 1
         '
         'txtremoveprod
         '
-        Me.txtremoveprod.Location = New System.Drawing.Point(98, 225)
+        Me.txtremoveprod.Location = New System.Drawing.Point(103, 458)
         Me.txtremoveprod.Margin = New System.Windows.Forms.Padding(2)
         Me.txtremoveprod.Name = "txtremoveprod"
         Me.txtremoveprod.Size = New System.Drawing.Size(69, 20)
@@ -121,7 +121,7 @@ Partial Class saleentry
         '
         'txtremovequan
         '
-        Me.txtremovequan.Location = New System.Drawing.Point(171, 225)
+        Me.txtremovequan.Location = New System.Drawing.Point(176, 458)
         Me.txtremovequan.Margin = New System.Windows.Forms.Padding(2)
         Me.txtremovequan.Name = "txtremovequan"
         Me.txtremovequan.Size = New System.Drawing.Size(69, 20)
@@ -129,7 +129,7 @@ Partial Class saleentry
         '
         'cmbremove
         '
-        Me.cmbremove.Location = New System.Drawing.Point(1087, 14)
+        Me.cmbremove.Location = New System.Drawing.Point(370, 18)
         Me.cmbremove.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbremove.Name = "cmbremove"
         Me.cmbremove.Size = New System.Drawing.Size(56, 34)
@@ -146,30 +146,33 @@ Partial Class saleentry
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.ReadOnly = True
+        Me.DataGridView2.RowHeadersVisible = False
         Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(1057, 180)
+        Me.DataGridView2.Size = New System.Drawing.Size(337, 412)
         Me.DataGridView2.TabIndex = 0
         '
         'txtsalestype
         '
-        Me.txtsalestype.Location = New System.Drawing.Point(244, 225)
+        Me.txtsalestype.Location = New System.Drawing.Point(249, 458)
         Me.txtsalestype.Margin = New System.Windows.Forms.Padding(2)
         Me.txtsalestype.Name = "txtsalestype"
         Me.txtsalestype.Size = New System.Drawing.Size(69, 20)
         Me.txtsalestype.TabIndex = 82
         '
-        'TextBox1
+        'tb_total
         '
-        Me.TextBox1.Location = New System.Drawing.Point(1010, 199)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(69, 20)
-        Me.TextBox1.TabIndex = 4
+        Me.tb_total.Location = New System.Drawing.Point(194, 434)
+        Me.tb_total.Margin = New System.Windows.Forms.Padding(2)
+        Me.tb_total.Name = "tb_total"
+        Me.tb_total.ReadOnly = True
+        Me.tb_total.Size = New System.Drawing.Size(156, 20)
+        Me.tb_total.TabIndex = 4
+        Me.tb_total.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(962, 198)
+        Me.Label4.Location = New System.Drawing.Point(127, 437)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(45, 13)
@@ -178,7 +181,7 @@ Partial Class saleentry
         '
         'cmbconfirm
         '
-        Me.cmbconfirm.Location = New System.Drawing.Point(1051, 222)
+        Me.cmbconfirm.Location = New System.Drawing.Point(375, 437)
         Me.cmbconfirm.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbconfirm.Name = "cmbconfirm"
         Me.cmbconfirm.Size = New System.Drawing.Size(56, 32)
@@ -188,7 +191,7 @@ Partial Class saleentry
         '
         'txtcustomerid
         '
-        Me.txtcustomerid.Location = New System.Drawing.Point(1105, 63)
+        Me.txtcustomerid.Location = New System.Drawing.Point(657, 129)
         Me.txtcustomerid.Margin = New System.Windows.Forms.Padding(2)
         Me.txtcustomerid.Name = "txtcustomerid"
         Me.txtcustomerid.Size = New System.Drawing.Size(69, 20)
@@ -206,7 +209,7 @@ Partial Class saleentry
         '
         'txtprodentrycode
         '
-        Me.txtprodentrycode.Location = New System.Drawing.Point(960, 148)
+        Me.txtprodentrycode.Location = New System.Drawing.Point(512, 214)
         Me.txtprodentrycode.Margin = New System.Windows.Forms.Padding(2)
         Me.txtprodentrycode.Name = "txtprodentrycode"
         Me.txtprodentrycode.Size = New System.Drawing.Size(138, 20)
@@ -215,7 +218,7 @@ Partial Class saleentry
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(868, 202)
+        Me.Label6.Location = New System.Drawing.Point(420, 268)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(63, 13)
@@ -224,7 +227,7 @@ Partial Class saleentry
         '
         'txtquan
         '
-        Me.txtquan.Location = New System.Drawing.Point(960, 229)
+        Me.txtquan.Location = New System.Drawing.Point(512, 295)
         Me.txtquan.Margin = New System.Windows.Forms.Padding(2)
         Me.txtquan.Name = "txtquan"
         Me.txtquan.Size = New System.Drawing.Size(48, 20)
@@ -233,7 +236,7 @@ Partial Class saleentry
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(868, 233)
+        Me.Label9.Location = New System.Drawing.Point(420, 299)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(49, 13)
@@ -243,7 +246,7 @@ Partial Class saleentry
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(868, 148)
+        Me.Label12.Location = New System.Drawing.Point(420, 214)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(87, 13)
@@ -253,7 +256,7 @@ Partial Class saleentry
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(23, 249)
+        Me.Label13.Location = New System.Drawing.Point(762, 29)
         Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(60, 13)
@@ -262,7 +265,7 @@ Partial Class saleentry
         '
         'txtclassification
         '
-        Me.txtclassification.Location = New System.Drawing.Point(960, 200)
+        Me.txtclassification.Location = New System.Drawing.Point(512, 266)
         Me.txtclassification.Margin = New System.Windows.Forms.Padding(2)
         Me.txtclassification.Name = "txtclassification"
         Me.txtclassification.Size = New System.Drawing.Size(138, 20)
@@ -270,7 +273,7 @@ Partial Class saleentry
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(970, 17)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(522, 83)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(218, 20)
@@ -279,7 +282,7 @@ Partial Class saleentry
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(868, 174)
+        Me.Label1.Location = New System.Drawing.Point(420, 240)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 13)
@@ -288,7 +291,7 @@ Partial Class saleentry
         '
         'txtprodname
         '
-        Me.txtprodname.Location = New System.Drawing.Point(960, 171)
+        Me.txtprodname.Location = New System.Drawing.Point(512, 237)
         Me.txtprodname.Margin = New System.Windows.Forms.Padding(2)
         Me.txtprodname.Name = "txtprodname"
         Me.txtprodname.Size = New System.Drawing.Size(138, 20)
@@ -297,7 +300,7 @@ Partial Class saleentry
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(868, 126)
+        Me.Label2.Location = New System.Drawing.Point(420, 192)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 13)
@@ -306,7 +309,7 @@ Partial Class saleentry
         '
         'txtsalesinv
         '
-        Me.txtsalesinv.Location = New System.Drawing.Point(960, 123)
+        Me.txtsalesinv.Location = New System.Drawing.Point(512, 189)
         Me.txtsalesinv.Margin = New System.Windows.Forms.Padding(2)
         Me.txtsalesinv.Name = "txtsalesinv"
         Me.txtsalesinv.Size = New System.Drawing.Size(138, 20)
@@ -314,7 +317,7 @@ Partial Class saleentry
         '
         'txtsalesntrycode
         '
-        Me.txtsalesntrycode.Location = New System.Drawing.Point(960, 92)
+        Me.txtsalesntrycode.Location = New System.Drawing.Point(512, 158)
         Me.txtsalesntrycode.Margin = New System.Windows.Forms.Padding(2)
         Me.txtsalesntrycode.Name = "txtsalesntrycode"
         Me.txtsalesntrycode.Size = New System.Drawing.Size(138, 20)
@@ -323,7 +326,7 @@ Partial Class saleentry
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(868, 92)
+        Me.Label5.Location = New System.Drawing.Point(420, 158)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(88, 13)
@@ -332,7 +335,7 @@ Partial Class saleentry
         '
         'txtcredno
         '
-        Me.txtcredno.Location = New System.Drawing.Point(960, 40)
+        Me.txtcredno.Location = New System.Drawing.Point(512, 106)
         Me.txtcredno.Margin = New System.Windows.Forms.Padding(2)
         Me.txtcredno.Name = "txtcredno"
         Me.txtcredno.Size = New System.Drawing.Size(138, 20)
@@ -341,7 +344,7 @@ Partial Class saleentry
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(868, 42)
+        Me.Label7.Location = New System.Drawing.Point(420, 108)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(52, 13)
@@ -350,7 +353,7 @@ Partial Class saleentry
         '
         'txtcustomername
         '
-        Me.txtcustomername.Location = New System.Drawing.Point(960, 66)
+        Me.txtcustomername.Location = New System.Drawing.Point(512, 132)
         Me.txtcustomername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtcustomername.Name = "txtcustomername"
         Me.txtcustomername.Size = New System.Drawing.Size(138, 20)
@@ -359,7 +362,7 @@ Partial Class saleentry
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(868, 66)
+        Me.Label8.Location = New System.Drawing.Point(420, 132)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(83, 13)
@@ -370,7 +373,7 @@ Partial Class saleentry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1226, 543)
+        Me.ClientSize = New System.Drawing.Size(1247, 543)
         Me.Controls.Add(Me.txtcustomerid)
         Me.Controls.Add(Me.txtcustomername)
         Me.Controls.Add(Me.Label8)
@@ -409,7 +412,7 @@ Partial Class saleentry
     End Sub
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tb_total As System.Windows.Forms.TextBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label

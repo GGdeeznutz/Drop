@@ -38,3 +38,4 @@ D:\VS Projects\Drop\GardenFreshARCRSystem\bin\Debug\MySql.Data.dll
 D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\WindowsApplication1.quantity_form2.resources
 D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.exe
 D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARCRSystem.pdb
+D:\VS Projects\Drop\GardenFreshARCRSystem\obj\x86\Debug\GardenFreshARSystem.vbprojResolveAssemblyReference.cache
